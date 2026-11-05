@@ -139,7 +139,7 @@ final class WakeManager: NSObject, ObservableObject {
     }
 
     private func acquireAssertion() -> Bool {
-        let reason = "PowerKeeper 正在保持系统唤醒" as CFString
+        let reason = "Macaffeine 正在保持系统唤醒" as CFString
         let result = IOPMAssertionCreateWithName(
             kIOPMAssertionTypePreventUserIdleSystemSleep as CFString,
             IOPMAssertionLevel(kIOPMAssertionLevelOn),
@@ -149,7 +149,7 @@ final class WakeManager: NSObject, ObservableObject {
 
         guard result == kIOReturnSuccess else {
             assertionID = 0
-            NSLog("PowerKeeper: 创建防休眠断言失败 (%d)", result)
+            NSLog("Macaffeine: 创建防休眠断言失败 (%d)", result)
             return false
         }
         return true

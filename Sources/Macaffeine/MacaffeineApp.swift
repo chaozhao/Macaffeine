@@ -2,7 +2,7 @@ import AppKit
 
 @main
 @MainActor
-struct PowerKeeperApp {
+struct MacaffeineApp {
     static func main() {
         let app = NSApplication.shared
         let delegate = AppDelegate()

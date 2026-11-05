@@ -11,7 +11,7 @@ enum DisplayController {
         do {
             try process.run()
         } catch {
-            NSLog("PowerKeeper: 熄屏失败 - %@", error.localizedDescription)
+            NSLog("Macaffeine: 熄屏失败 - %@", error.localizedDescription)
         }
     }
 }

@@ -28,7 +28,7 @@ struct PopoverContentView: View {
             AppMark(size: 34)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("PowerKeeper")
+                Text("Macaffeine")
                     .font(.system(size: 14, weight: .semibold))
                 Text("保持唤醒 · 熄屏 · 定时关机")
                     .font(.system(size: 11))

@@ -36,7 +36,7 @@ final class AppMenu: NSObject, NSMenuDelegate {
         ))
         menu.addItem(.separator())
         menu.addItem(makeItem(
-            title: "退出 PowerKeeper",
+            title: "退出 Macaffeine",
             symbol: "rectangle.portrait.and.arrow.right",
             action: #selector(quit),
             keyEquivalent: "q"

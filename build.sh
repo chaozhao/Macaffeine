@@ -6,11 +6,11 @@ cd "$ROOT_DIR"
 
 swift build -c release
 
-APP_DIR="$ROOT_DIR/dist/PowerKeeper.app"
+APP_DIR="$ROOT_DIR/dist/Macaffeine.app"
 rm -rf "$APP_DIR"
 mkdir -p "$APP_DIR/Contents/MacOS" "$APP_DIR/Contents/Resources"
 
-cp "$ROOT_DIR/.build/release/PowerKeeper" "$APP_DIR/Contents/MacOS/PowerKeeper"
+cp "$ROOT_DIR/.build/release/Macaffeine" "$APP_DIR/Contents/MacOS/Macaffeine"
 cp "$ROOT_DIR/Resources/Info.plist" "$APP_DIR/Contents/Info.plist"
 cp "$ROOT_DIR/Resources/AppIcon.icns" "$APP_DIR/Contents/Resources/AppIcon.icns"
 codesign --force --sign - "$APP_DIR"

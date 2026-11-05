@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "PowerKeeper",
+    name: "Macaffeine",
     platforms: [
         .macOS(.v13)
     ],
     targets: [
         .executableTarget(
-            name: "PowerKeeper",
-            path: "Sources/PowerKeeper"
+            name: "Macaffeine",
+            path: "Sources/Macaffeine"
         )
     ]
 )

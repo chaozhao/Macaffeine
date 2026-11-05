@@ -139,7 +139,7 @@ final class ShutdownManager: NSObject, ObservableObject {
         do {
             try process.run()
         } catch {
-            NSLog("PowerKeeper: 无法执行自动关机 - %@", error.localizedDescription)
+            NSLog("Macaffeine: 无法执行自动关机 - %@", error.localizedDescription)
             reportShutdownFailure()
         }
     }
@@ -149,7 +149,7 @@ final class ShutdownManager: NSObject, ObservableObject {
 
         let alert = NSAlert()
         alert.messageText = "自动关机失败"
-        alert.informativeText = "请在“系统设置 → 隐私与安全性 → 自动化”中允许 PowerKeeper 控制 System Events，然后重新设置自动关机。"
+        alert.informativeText = "请在“系统设置 → 隐私与安全性 → 自动化”中允许 Macaffeine 控制 System Events，然后重新设置自动关机。"
         alert.alertStyle = .warning
         alert.runModal()
     }

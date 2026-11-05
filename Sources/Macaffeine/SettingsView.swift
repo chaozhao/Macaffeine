@@ -39,7 +39,7 @@ struct SettingsView: View {
             AppMark(size: 36)
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("PowerKeeper")
+                Text("Macaffeine")
                     .font(.system(size: 15, weight: .semibold))
                 Text("电源与启动设置")
                     .font(.system(size: 11))
@@ -93,7 +93,7 @@ struct SettingsView: View {
             }
             .settingsCard()
 
-            Text("开启后，PowerKeeper 启动时会按默认时长自动保持系统唤醒。")
+            Text("开启后，Macaffeine 启动时会按默认时长自动保持系统唤醒。")
                 .font(.system(size: 11))
                 .foregroundStyle(.secondary)
                 .padding(.horizontal, 2)
@@ -106,12 +106,12 @@ struct SettingsView: View {
 
             VStack(spacing: 0) {
                 settingsRow {
-                    Text("开机时启动 PowerKeeper")
+                    Text("开机时启动 Macaffeine")
                         .font(.system(size: 13))
 
                     Spacer(minLength: 12)
 
-                    Toggle("开机时启动 PowerKeeper", isOn: Binding(
+                    Toggle("开机时启动 Macaffeine", isOn: Binding(
                         get: { launchAtLogin },
                         set: { setLaunchAtLogin($0) }
                     ))

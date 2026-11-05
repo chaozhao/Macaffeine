@@ -1,6 +1,6 @@
-# PowerKeeper
+# Macaffeine
 
-PowerKeeper 是一个轻量的 macOS 菜单栏电源管理工具，把“保持唤醒、立刻熄屏、定时关机”放在一个弹窗里，不需要打开系统设置来回切换。
+Macaffeine 是一个轻量的 macOS 菜单栏电源管理工具，把“保持唤醒、立刻熄屏、定时关机”放在一个弹窗里，不需要打开系统设置来回切换。
 
 应用常驻菜单栏，不显示 Dock 图标。
 
@@ -26,12 +26,12 @@ PowerKeeper 是一个轻量的 macOS 菜单栏电源管理工具，把“保持�
 ./build.sh
 ```
 
-脚本会以 Release 配置构建应用，生成 `dist/PowerKeeper.app`，并进行本地临时签名。
+脚本会以 Release 配置构建应用，生成 `dist/Macaffeine.app`，并进行本地临时签名。
 
 运行：
 
 ```bash
-open dist/PowerKeeper.app
+open dist/Macaffeine.app
 ```
 
 如果系统阻止打开，可在“系统设置 → 隐私与安全性”中允许运行。
@@ -39,8 +39,8 @@ open dist/PowerKeeper.app
 如需使用开机启动，建议先将应用移动到“应用程序”文件夹：
 
 ```bash
-cp -R dist/PowerKeeper.app /Applications/
-open /Applications/PowerKeeper.app
+cp -R dist/Macaffeine.app /Applications/
+open /Applications/Macaffeine.app
 ```
 
 ## 使用
@@ -53,7 +53,7 @@ open /Applications/PowerKeeper.app
 ### 权限说明
 
 - 自动关机会通过 AppleScript 调用 `System Events`。首次使用时，macOS 会请求自动化权限；如果拒绝，需要在“系统设置 → 隐私与安全性 → 自动化”中重新允许。
-- 开启开机启动后，系统可能要求在“系统设置 → 通用 → 登录项”中确认 PowerKeeper。
+- 开启开机启动后，系统可能要求在“系统设置 → 通用 → 登录项”中确认 Macaffeine。
 
 ## 项目结构
 
@@ -63,8 +63,8 @@ open /Applications/PowerKeeper.app
 ├── Resources/
 │   ├── AppIcon.icns              # 应用图标
 │   └── Info.plist                # 应用元信息
-├── Sources/PowerKeeper/
-│   ├── PowerKeeperApp.swift      # 应用入口
+├── Sources/Macaffeine/
+│   ├── MacaffeineApp.swift      # 应用入口
 │   ├── AppDelegate.swift         # 生命周期
 │   ├── StatusBarController.swift # 菜单栏图标与弹窗
 │   ├── PopoverContentView.swift  # 控制弹窗界面

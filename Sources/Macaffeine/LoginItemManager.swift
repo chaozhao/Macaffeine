@@ -16,9 +16,9 @@ enum LoginItemManager {
         case .enabled:
             return nil
         case .requiresApproval:
-            return "已注册，需要在“系统设置 → 通用 → 登录项”中允许 PowerKeeper。"
+            return "已注册，需要在“系统设置 → 通用 → 登录项”中允许 Macaffeine。"
         case .notFound:
-            return "系统未找到应用，请把 PowerKeeper.app 移动到“应用程序”文件夹后再试。"
+            return "系统未找到应用，请把 Macaffeine.app 移动到“应用程序”文件夹后再试。"
         case .notRegistered:
             return nil
         @unknown default:
